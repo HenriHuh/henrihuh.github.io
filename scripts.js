@@ -7,11 +7,11 @@ tabs.forEach( tab => {
         tabContents.forEach(tabContent => {
             tabContent.classList.remove('active')
         })
-        target.classList.add('active')
 
         tabs.forEach(tabContent => {
             tab.classList.remove('active')
         })
         tab.classList.add('active')
+        target.classList.add('active')
     })
 })
