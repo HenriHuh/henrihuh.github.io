@@ -8,7 +8,7 @@ tabs.forEach( tab => {
             tabContent.classList.remove('active')
         })
 
-        tabs.forEach(tabContent => {
+        tabs.forEach(tab => {
             tab.classList.remove('active')
         })
         tab.classList.add('active')
