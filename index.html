@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Henri Huhtala - Portfolio</title>
+    <script src="scripts.js" defer></script>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -9,12 +11,28 @@
     <h1>Henri Huhtala - Portfolio</h1>
 
     <ul>
-        <li>Projects</li>
-        <li>NSFW</li>
-        <li>Extra</li>
+        <li data-tab-target="#Projects">Projects</li>
+        <li data-tab-target="#NSFW">NSFW</li>
+        <li data-tab-target="#Extra">Extra</li>
     </ul>
 
+    
+    <div class="tab-content">
+        <div id="Projects" data-tab-content>
+            <h1>Projects</h1>
+        </div>
+        
+        <div id="NSFW" data-tab-content>
+            <h1>Projects</h1>
+        </div>
+
+        <div id="Extra" data-tab-content>
+            <h1>Projects</h1>
+        </div>
+    </div>
+    
     <hr>
+
     <div>
         <h2><a href="https://henuli.itch.io/froggoinspace">Froggo in Space</a></h2>
         <p><i>Hyper casual platformer for HMTL5 and mobile.</i></p>
