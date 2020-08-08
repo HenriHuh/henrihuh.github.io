@@ -13,7 +13,7 @@ body{
 
 @font-face {
     font-family: Dreamer;
-    src: url('../Fonts/Celebrate.otf');
+    src: url('Fonts/Celebrate.otf');
 }
 
 .tabs{
