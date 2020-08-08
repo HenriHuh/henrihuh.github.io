@@ -16,6 +16,10 @@ body{
     src: url('Fonts/Celebrate.otf');
 }
 
+#grad{
+    background-image:linear-gradient(to right, white, blue);
+}
+
 .tabs{
 
     display: flex;
