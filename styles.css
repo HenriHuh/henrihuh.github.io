@@ -11,8 +11,13 @@ body{
     margin: 0;
 }
 
+@font-face {
+    font-family: Dreamer;
+    src: url('Celebrate.otf');
+}
 
 .tabs{
+
     display: flex;
     justify-content: space-around;
     list-style-type: none;
