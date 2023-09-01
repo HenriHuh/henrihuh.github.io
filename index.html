@@ -28,121 +28,183 @@
 <body>
 
 
-    <ul class="tabs" style="font-family: 'Dreamer';">
+    <ul class="tabs" style="font-family: 'Echotopia-Regular';">
+        <li data-tab-target="#General" class="active tab"><h4>General</h4></li>
+        <li data-tab-target="#Timeline" class="tab"><h4>Timeline</h4></li>
+        <li data-tab-target="#Work" class="tab"><h4>Work</h4></li>
+        <li style="font-size:20px; color:dimgray;"></li>
+        <li style="font-size:20px; color:dimgray;"></li>
         <li style="font-size:20px; color:dimgray;"><h3>Henri Huhtala - Portfolio</h3></li>
-        <li data-tab-target="#Projects" class="active tab"><h4>< Projects ></h4></li>
-        <li data-tab-target="#Work" class="tab"><h4>< Work ></h4></li>
+
     </ul>
     <div id="grad1"></div>
 
 
-    <div class="tab-content" style="font-family: 'Dreamer'; font-size:20px; ">
-        <div id="Projects" data-tab-content class="active">
-            <h1>Projects</h1>
 
-            <i>
-                Here's some projects that I've worked on.
-                <br>My work mainly revolves around C# and Unity
-                <br>but I have also contributed to design and production.
-            </i>
+    <div class="tab-content" style="font-family: 'Jost-Regular'; font-size: 20px; ">
+
+        <div id="General" data-tab-content class="active">
 
 
-            <div class="frame">
-                <h2><a href="https://play.google.com/store/apps/details?id=com.zeptolab.omnomparkour.google&hl=fi&gl=US">Om Nom Parkour</a></h2>
-                <p><i>Runner game with parkour. Sequel to Om Nom Run.</i></p>
-                <img src="Images/om_nom_parkour.png" height="500" width="250" />
-                <ul>
-                    <li>Game Programming</li>
-                    <li>Tools Programming</li>
-                </ul>
+            <div class="container">
+
+                <!--First Segment-->
+                <div class="segment">
+
+                    <div style="padding: 20px;">
+                            Finnish Game Developer and Software Engineer experienced with PC 
+                            and mobile games. 3+ Years professional experience in the game industry.
+
+                    </div>
+
+                    <div class="connecting-element" id="element1">Element 1</div>
+                    <div class="connecting-element" id="element2">Element 2</div>
+                    <div class="connecting-line" id="connectingLine"></div>
+
+                </div>
+
+                <!--Second Segment-->
+                <div class="segment">
+                    <div class="proficiency-title">C# and .Net Development</div>
+
+                    <!--1-->
+                    <div class="proficiency-content">
+                        Over 3 years professionally in a game company. 3 mobile releases.
+                        10+ projects total.
+                    </div>
+
+                    <!--2-->
+                    <div class="proficiency-content">
+                        Expertise on tools development and plugin integrations
+                        as well as gameplay and systems programming.
+                    </div>
+
+                    <!--3-->
+                    <div class="proficiency-content">
+                        Agile methodologies are an essential part of my career.
+                        I've been in a producer role in various student projects.
+                    </div>
+
+                </div>
+
+                <!--Third Segment-->
+                <div class="segment">
+
+                    <div class="title-center" style="font-size:20px; color:#000000;"><h3>- Proficiencies -</h3></div>
+                    <div class="trigger-element">C# and .Net development</div>
+                    <div class="trigger-element">Unity</div>
+                    <div class="trigger-element">Project Management</div>
+
+                </div>
+
             </div>
 
 
-            <hr>
-            <div class="frame">
-                <h2><a href="https://play.google.com/store/apps/details?id=com.BalancedBeans.Undergrow">Undergrow</a></h2>
-                <p><i>A farming game, where you must grow roots for your plants.</i></p>
-                <video autoplay loop muted height="540" width="960">
-                    <source src="Images/undergrow.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-                <ul>
-                    <li>Technical Design</li>
-                    <li>Lead Programmer</li>
-                </ul>
-            </div>
-
-            <hr>
-            <div class="frame">
-                <h2>Try not to Die</h2>
-                <p><i>A mobile postapocalyptic survival game with crafting and combat. (Prototype at Koukoi Games)</i></p>
-                <img src="Images/try_not_horizontal.png" height="300" width="532" />
-                <ul>
-                    <li>Technical Design</li>
-                    <li>Programming</li>
-                </ul>
-            </div>
-
-            <hr>
-            <div class="frame">
-                <h2>Arrow Master</h2>
-                <p><i>Mobile PvP castle siege with dragons and catapults. (Prototype at Koukoi Games)</i></p>
-                <img src="Images/arrow_master_horizontal.png" height="300" width="532" />
-                <ul>
-                    <li>Game Mechanics Programming</li>
-                </ul>
-            </div>
-
-            <hr>
-            <div class="frame">
-                <h2><a href="https://henuli.itch.io/froggoinspace">Froggo in Space</a></h2>
-                <p><i>Hyper casual platformer for WEBGL and mobile.</i></p>
-                <img src="Images/froggo_horizontal.png" height="200" width="500" />
-                <ul>
-                    <li>Technical Lead</li>
-                    <li>Programming</li>
-                </ul>
-            </div>
+            <!--<div class="frame">
+            <h2><a href="https://play.google.com/store/apps/details?id=com.zeptolab.omnomparkour.google&hl=fi&gl=US">Om Nom Parkour</a></h2>
+            <p><i>Runner game with parkour. Sequel to Om Nom Run.</i></p>
+            <img src="Images/om_nom_parkour.png" height="500" width="250" />
+            <ul>
+                <li>Game Programming</li>
+                <li>Tools Programming</li>
+            </ul>
+        </div>
 
 
+        <hr>
+        <div class="frame">
+            <h2><a href="https://play.google.com/store/apps/details?id=com.BalancedBeans.Undergrow">Undergrow</a></h2>
+            <p><i>A farming game, where you must grow roots for your plants.</i></p>
+            <video autoplay loop muted height="540" width="960">
+                <source src="Images/undergrow.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <ul>
+                <li>Technical Design</li>
+                <li>Lead Programmer</li>
+            </ul>
+        </div>
 
+        <hr>
+        <div class="frame">
+            <h2>Try not to Die</h2>
+            <p><i>A mobile postapocalyptic survival game with crafting and combat. (Prototype at Koukoi Games)</i></p>
+            <img src="Images/try_not_horizontal.png" height="300" width="532" />
+            <ul>
+                <li>Technical Design</li>
+                <li>Programming</li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="frame">
+            <h2>Arrow Master</h2>
+            <p><i>Mobile PvP castle siege with dragons and catapults. (Prototype at Koukoi Games)</i></p>
+            <img src="Images/arrow_master_horizontal.png" height="300" width="532" />
+            <ul>
+                <li>Game Mechanics Programming</li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="frame">
+            <h2><a href="https://henuli.itch.io/froggoinspace">Froggo in Space</a></h2>
+            <p><i>Hyper casual platformer for WEBGL and mobile.</i></p>
+            <img src="Images/froggo_horizontal.png" height="200" width="500" />
+            <ul>
+                <li>Technical Lead</li>
+                <li>Programming</li>
+            </ul>
+        </div>-->
             <!--<hr>
-    <div class="frame">
-        <h2>Outdoors Kainuu</h2>
-        <p><i>A client project for the 'Eino Leino' hiking route in Vuokatti.</i></p>
-        <video autoplay loop muted>
-            <source src="Images/outdoors.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <ul>
-            <li>Minigames Programming</li>
-            <li>Minigames Design</li>
-        </ul>
-    </div>-->
+        <div class="frame">
+            <h2>Outdoors Kainuu</h2>
+            <p><i>A client project for the 'Eino Leino' hiking route in Vuokatti.</i></p>
+            <video autoplay loop muted>
+                <source src="Images/outdoors.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <ul>
+                <li>Minigames Programming</li>
+                <li>Minigames Design</li>
+            </ul>
+        </div>-->
             <!--<hr>
-    <div class="frame">
-        <h2><a href="https://raisedbyyou.itch.io/raised-by-you">Raised by You</a></h2>
-        <p><i>A Virtual Reality game about raising a monster pet.</i></p>
-        <img src="Images/raised_horizontal.png" height="200" width="500" />
-        <ul>
-            <li>AI Programming</li>
-            <li>Effects</li>
-        </ul>
-    </div>
+        <div class="frame">
+            <h2><a href="https://raisedbyyou.itch.io/raised-by-you">Raised by You</a></h2>
+            <p><i>A Virtual Reality game about raising a monster pet.</i></p>
+            <img src="Images/raised_horizontal.png" height="200" width="500" />
+            <ul>
+                <li>AI Programming</li>
+                <li>Effects</li>
+            </ul>
+        </div>
 
-    <hr>
-    <div class="frame">
-        <h2><a href="https://twitter.com/catfish_team">Reef Chase</a></h2>
-        <p><i>A game of cat and mouse with evolving fish and sea creatures.</i></p>
-        <img src="Images/reef_horizontal.png" height="200" width="500" />
-        <ul>
-            <li>Fish AI Programming</li>
-            <li>UI and Effects Programming</li>
-        </ul>
-    </div>-->
+        <hr>
+        <div class="frame">
+            <h2><a href="https://twitter.com/catfish_team">Reef Chase</a></h2>
+            <p><i>A game of cat and mouse with evolving fish and sea creatures.</i></p>
+            <img src="Images/reef_horizontal.png" height="200" width="500" />
+            <ul>
+                <li>Fish AI Programming</li>
+                <li>UI and Effects Programming</li>
+            </ul>
+        </div>-->
 
 
             <br>
+
+        </div>
+
+        <div id="Timeline" data-tab-content>
+            <h1>Timeline</h1>
+
+            <div>
+                2007
+            </div>
+
+            <br>
+
 
         </div>
 
@@ -166,6 +228,7 @@
             </div>
 
         </div>
+
     </div>
 
 </body>

@@ -6,9 +6,30 @@
     display: block;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body{
     padding: 0;
     margin: 0;
+}
+
+.title-center {
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Echotopia-Regular;
+    src: url('Fonts/Echotopia-Regular.otf');
+}
+
+@font-face {
+    font-family: Jost-Regular;
+    src: url('Fonts/Jost-Regular.ttf');
 }
 
 @font-face {
@@ -16,8 +37,8 @@ body{
     src: url('Fonts/Celebrate.otf');
 }
 
-#grad{
-    background-image:linear-gradient(to right, white, blue);
+#grad {
+    background-image: linear-gradient(to right, white, blue);
 }
 
 .tabs{
@@ -45,6 +66,77 @@ body{
 }
 
 .tab-content{
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 20px;
+}
+
+
+.trigger-element {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.target-element {
+    padding: 10px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.segment {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    .segment:nth-child(1) {
+        width: 25%;
+        background-color: #f0f0f0;
+    }
+
+    .segment:nth-child(2) {
+        width: 45%;
+        background-color: #d3d3d3;
+    }
+
+    .segment:nth-child(3) {
+        width: 30%;
+        background-color: #c0c0c0;
+    }
+
+
+.connecting-element {
+    width: 100px;
+    height: 50px;
+    background-color: #f0f0f0;
+    margin: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.connecting-line {
+    position: absolute;
+    width: 2px;
+    background-color: red;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.proficiency-content {
+    position: absolute;
+    padding: 20px;
+    width: 40%;
+    transition: opacity 0.3s;
+}
+
+.proficiency-title {
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
 }
