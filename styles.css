@@ -1,14 +1,10 @@
-﻿[data-tab-content]{
-    display: none;
-}
-
-.active[data-tab-content]{
-    display: block;
-}
-
+﻿
 html, body {
     height: 100%;
     margin: 0;
+    background-color: black;
+    background-image: url('Images/Background.png');
+    min-width: 1200px;
 }
 
 body{
@@ -41,39 +37,18 @@ body{
     background-image: linear-gradient(to right, white, blue);
 }
 
-.tabs{
-
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid black;
-}
-
-.tab {
-    cursor: pointer;
-    padding: 10px;
-}
-
-.tab.active{
-    background-color: #CCC;
-}
-
-
-.tab:hover{
-    background-color: #AAA;
-}
-
-.tab-content{
-    margin-left: 40px;
-    margin-right: 20px;
-}
-
 
 .trigger-element {
     padding: 10px;
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.non-trigger-element {
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .target-element {
@@ -84,27 +59,66 @@ body{
 
 .container {
     display: flex;
-    height: 100%;
 }
+
+.timeline-node {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255, 0.35);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    .timeline-node.highlighted {
+        border: 3px solid #7de7ff;
+    }
+
+    .timeline-node.selected {
+        border-radius: 5px;
+    }
+
+.pointer {
+    content: url('Images/ArrowDown.png');
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 
 .segment {
     margin-left: 10px;
     margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #eeeeee;
 }
 
     .segment:nth-child(1) {
         width: 25%;
-        background-color: #f0f0f0;
+        height: 360px;
+        /*background-color: #f0f0f0;*/
     }
 
     .segment:nth-child(2) {
         width: 45%;
-        background-color: #d3d3d3;
+        height: 360px;
+        /*background-color: #d3d3d3;*/
     }
 
     .segment:nth-child(3) {
-        width: 30%;
-        background-color: #c0c0c0;
+        margin-left: 30px;
+        width: 25%;
+        height: 800px;
+        margin-bottom: -440px;
+        /*background-color: #c0c0c0;*/
     }
 
 
@@ -121,9 +135,17 @@ body{
 
 .connecting-line {
     position: absolute;
-    width: 2px;
-    background-color: red;
+    height: 4px;
+    background-color: #7de7ff;
     opacity: 0;
+    transition: opacity 0.3s;
+    /*transition: width 0.3s ease;*/
+}
+
+.connecting-line-vertical {
+    position: absolute;
+    width: 4px;
+    background-color: #7de7ff;
     transition: opacity 0.3s;
 }
 
@@ -139,4 +161,56 @@ body{
     padding: 10px 0;
     text-align: center;
     font-size: 24px;
+    color: white;
+    background-color: rgba(255,255,255, 0.1);
+}
+
+.proficiency-lineX {
+    position: absolute;
+    height: 3px;
+    background-color: rgba(255,255,255, 0.5);
+    opacity: 0;
+    transition: width 0.3s ease;
+    transition: opacity 0.3s;
+}
+
+.proficiency-lineY {
+    position: absolute;
+    height: 100px;
+    width: 3px;
+    background-color: rgba(255,255,255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    /*transition: height 0.3s ease;*/
+}
+
+.proficiency-lineY-notch {
+    position: absolute;
+    height: 3px;
+    width: 24px;
+    background-color: rgba(255,255,255, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-content {
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    color: #acacac;
+    transition: opacity 0.4s;
+    opacity: 0;
+    width: 65%;
+    border: solid #7de7ff 3px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
+    font-family: 'Jost-Regular';
+    border-radius: 6px;
+}
+
+.text-highlight {
+    color: #7de7ff;
+    /*font-style: italic;*/
+    /*font-weight: bold;*/
 }

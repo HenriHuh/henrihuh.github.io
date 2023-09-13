@@ -27,207 +27,343 @@
 
 <body>
 
+    <!-- never again web dev -->
 
-    <ul class="tabs" style="font-family: 'Echotopia-Regular';">
-        <li data-tab-target="#General" class="active tab"><h4>General</h4></li>
-        <li data-tab-target="#Timeline" class="tab"><h4>Timeline</h4></li>
-        <li data-tab-target="#Work" class="tab"><h4>Work</h4></li>
-        <li style="font-size:20px; color:dimgray;"></li>
-        <li style="font-size:20px; color:dimgray;"></li>
-        <li style="font-size:20px; color:dimgray;"><h3>Henri Huhtala - Portfolio</h3></li>
-
-    </ul>
-    <div id="grad1"></div>
+    <div id="General" data-tab-content class="active">
 
 
+        <!--Upper Segment-->
+        <div class="container" style="font-family: 'Jost-Regular'; font-size: large; padding-top: 20px">
 
-    <div class="tab-content" style="font-family: 'Jost-Regular'; font-size: 20px; ">
+            <!--First Segment-->
+            <div class="segment">
 
-        <div id="General" data-tab-content class="active">
+                <h3 style="font-family: 'Echotopia-Regular'; text-align: center;">Henri Huhtala - Portfolio</h3>
 
 
-            <div class="container">
+                <div style="padding: 20px; text-align: center">
+                    Finnish Game Developer and Software Engineer experienced with PC
+                    and mobile games. 3+ Years professional experience in the game industry.
 
-                <!--First Segment-->
-                <div class="segment">
+                </div>
+                <div style="padding-top: 20px; text-align: center; color: rgba(255, 255, 255, 0.7)">
+                    - Socials -
+                </div>
 
-                    <div style="padding: 20px;">
-                            Finnish Game Developer and Software Engineer experienced with PC 
-                            and mobile games. 3+ Years professional experience in the game industry.
 
+                <div style="display: flex; justify-content: space-between; padding-left: 60px; padding-right: 60px; padding-top: 20px">
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/huhtala-henri/" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Logo_LinkedIn.png" style="width: 60px 100%; height: 60px;" alt="Icon">
+                        </a>
                     </div>
 
-                    <div class="connecting-element" id="element1">Element 1</div>
-                    <div class="connecting-element" id="element2">Element 2</div>
-                    <div class="connecting-line" id="connectingLine"></div>
+                    <div>
+                        <a href="https://github.com/HenriHuh" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Logo_GitHub.png" style="width: 60px 100%; height: 60px;" alt="Icon">
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://www.artstation.com/henrih" target="_blank" rel="noopener noreferrer">
+                            <img src="Images/Logo_ArtStation.webp" style="width: 60px 100%; height: 60px;" alt="Icon">
+                        </a>
+                    </div>
+
+
+
+                    <!--<div class="connecting-element" id="element1">Element 1</div>
+                <div class="connecting-element" id="element2">Element 2</div>
+                <div class="connecting-line" id="connectingLine"></div>-->
+
+
+                </div>
+            </div>
+
+            <!--Second Segment-->
+            <div class="segment">
+                <div class="proficiency-title">C# and .Net Development</div>
+
+                <!--1-->
+                <div class="proficiency-content">
+                    - 7+ Years total experience at work and studies
+                    <br />- 3+ Years professionally in a game company
+                    <br />- 10+ Projects overall and 3 published games
+                </div>
+
+                <!--2-->
+                <div class="proficiency-content">
+                    - Gameplay and systems programming
+                    <br />- Tools development
+                    <br />- Plugin integrations
+                </div>
+
+                <!--3-->
+                <div class="proficiency-content">
+                    - Creating efficient pipelines for agile development
+                    <br />- Producer role in various projects
+                </div>
+
+                <!--4-->
+                <div class="proficiency-content">
+                    - Contributed to design in multiple projects
+                    <br />- Studied player motivation
+                </div>
+
+                <!--4-->
+                <div class="proficiency-content">
+                    - C++ at KAMK
+                    <br />- Learned Python and Java for game modding purpose
+                </div>
+
+            </div>
+
+            <!--Third Segment-->
+
+            <div class="segment">
+
+                <!--Proficiencies-->
+                <div class="title-center" style="font-size:20px; color:white;"><h3>- Proficiencies -</h3></div>
+                <div class="trigger-element" style="background-color: rgba(255, 255, 255, 0.1);" onmouseover="setTimelinePointers(0, 0, 1, 2, 3, 4, 5, 6)">C# and .Net development</div>
+                <div class="trigger-element" onmouseover="setTimelinePointers(1, 0, 1, 2, 3, 4, 5, 6)">Unity</div>
+                <div class="trigger-element" onmouseover="setTimelinePointers(2, 3, 4)">Project Management</div>
+
+                <!--Extra Skills-->
+                <div class="title-center" style="padding:inherit; font-size:18px; color:white;"><h3>- Extra Skills -</h3></div>
+                <div class="trigger-element" onmouseover="setTimelinePointers(3, 0, 1, 3, 4)">Game Design</div>
+                <div class="trigger-element" onmouseover="setTimelinePointers(4, 0, 1)">Other programming languages</div>
+
+                <!--Other-->
+                <div class="title-center" style="padding:inherit; font-size:18px; color:white;"><h3>- Recreation -</h3></div>
+                <div class="non-trigger-element">3D modeling</div>
+                <div class="non-trigger-element">Traditional Arts and Music</div>
+                <div class="non-trigger-element">Game Jams</div>
+
+
+                <div class="proficiency-lineY"></div>
+                <div class="proficiency-lineY-notch"></div>
+            </div>
+
+
+        </div>
+
+        <!--Lower Segment-->
+
+        <div style="margin-top: 20px">
+            <div class="proficiency-lineX"></div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; padding-left: 60px; padding-right: 60px; width: 65%; padding-top: 26px; align-items: center;">
+
+            <!--Content-->
+            <div class="timeline-node" style="background-image: url('Images/Logo_Modding.png');"></div>
+            <div class="timeline-node" style="background-image: url('Images/Logo_KAMK.png');"></div>
+            <div class="timeline-node" style="background-image: url('Images/Logo_Koukoi.png');"></div>
+            <div class="timeline-node" style="background-image: url('Images/Logo_Farmi.png');"></div>
+            <div class="timeline-node" style="background-image: url('Images/Logo_OGL.png');"></div>
+            <div class="timeline-node" style="background-image: url('Images/Logo_Koukoi.png');"></div>
+            <div class="timeline-node" style="background-image: url('Images/Logo_Sciplay.png');"></div>
+
+            <!--Connection lines-->
+            <div class="connecting-line" id="connectingLine"></div>
+            <div class="connecting-line" id="connectingLine"></div>
+            <div class="connecting-line" id="connectingLine"></div>
+            <div class="connecting-line" id="connectingLine"></div>
+            <div class="connecting-line" id="connectingLine"></div>
+            <div class="connecting-line" id="connectingLine"></div>
+
+            <!--Pointers-->
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+
+            <div class="connecting-line-vertical" id="connectingLineVert"></div>
+
+        </div>
+
+        <!--Projects-->
+        <!-- 1 -->
+        <div class="project-content">
+
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
+
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>Game Modding</h3></div>
+
+                    My journey to become a game developer began around <span class="text-highlight">2010</span> when I started learning <span class="text-highlight">Python and Java</span> for game modding purposes.
+                    I also learned to use <span class="text-highlight">Blender</span> for modeling and to play around with Blenders old game engine.
 
                 </div>
 
-                <!--Second Segment-->
-                <div class="segment">
-                    <div class="proficiency-title">C# and .Net Development</div>
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_blend.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
+                </div>
 
-                    <!--1-->
-                    <div class="proficiency-content">
-                        Over 3 years professionally in a game company. 3 mobile releases.
-                        10+ projects total.
-                    </div>
+            </div>
 
-                    <!--2-->
-                    <div class="proficiency-content">
-                        Expertise on tools development and plugin integrations
-                        as well as gameplay and systems programming.
-                    </div>
+        </div>
 
-                    <!--3-->
-                    <div class="proficiency-content">
-                        Agile methodologies are an essential part of my career.
-                        I've been in a producer role in various student projects.
-                    </div>
+        <!-- 2 -->
+        <div class="project-content">
+
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
+
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>Various Projects</h3></div>
+
+                    I started my studies at KAMK in <span class="text-highlight">2016</span> and graduated in <span class="text-highlight">2019</span>. I worked on numerous projects including <span class="text-highlight">PC, VR and mobile games</span>.
+                    My focus and specialization was in game programming though I also did some design work in certain projects.
+                    One of the highlights was a gamification client project for Vuokatti Resort.
 
                 </div>
 
-                <!--Third Segment-->
-                <div class="segment">
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_kamk.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
+                    <!--<a href="https://play.google.com/store/apps/details?id=com.zeptolab.omnomparkour.google&hl=fi&gl=US" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/Logo_GPlay.png" style="position: absolute; right: 10px; width: 60px 100%; height: 60px;" alt="Icon">
+                    </a>-->
+                </div>
 
-                    <div class="title-center" style="font-size:20px; color:#000000;"><h3>- Proficiencies -</h3></div>
-                    <div class="trigger-element">C# and .Net development</div>
-                    <div class="trigger-element">Unity</div>
-                    <div class="trigger-element">Project Management</div>
+            </div>
+
+        </div>
+
+        <!-- 3 -->
+        <div class="project-content">
+
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
+
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>Prototypes at Koukoi</h3></div>
+
+                    I did my school <span class="text-highlight">internship</span> in <span class="text-highlight">2019</span> at Koukoi. During my time I worked on three different prototypes, one of which was soft-launched and
+                    remained in production until 2021 Koukoi acquisition.
+
+                </div>
+
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_arrowmaster.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
+                    <a href="https://www.youtube.com/watch?v=QUngV9T833k" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/Logo_YT_Dark.png" style="position: absolute; background-color: white; border: solid white 3px; border-radius: 5px; right: 16px; top: 16px; width: 4px 100%; height: 32px;" alt="Icon">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 4 -->
+        <div class="project-content">
+
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
+
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>HTML5 Games at Pelifarmi</h3></div>
+
+                    After graduation I was a trainee at Pelifarmi in early <span class="text-highlight">2020</span>. I did mostly programming and production work, managing the project and milestones.
+                    We developed HTML5 WebGL browser games that totaled <span class="text-highlight">100 000+ visits</span> and got mostly positive feedback.
+
+                </div>
+
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_farmi.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
 
                 </div>
 
             </div>
 
-
-            <!--<div class="frame">
-            <h2><a href="https://play.google.com/store/apps/details?id=com.zeptolab.omnomparkour.google&hl=fi&gl=US">Om Nom Parkour</a></h2>
-            <p><i>Runner game with parkour. Sequel to Om Nom Run.</i></p>
-            <img src="Images/om_nom_parkour.png" height="500" width="250" />
-            <ul>
-                <li>Game Programming</li>
-                <li>Tools Programming</li>
-            </ul>
         </div>
 
+        <!-- 5 -->
+        <div class="project-content">
 
-        <hr>
-        <div class="frame">
-            <h2><a href="https://play.google.com/store/apps/details?id=com.BalancedBeans.Undergrow">Undergrow</a></h2>
-            <p><i>A farming game, where you must grow roots for your plants.</i></p>
-            <video autoplay loop muted height="540" width="960">
-                <source src="Images/undergrow.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <ul>
-                <li>Technical Design</li>
-                <li>Lead Programmer</li>
-            </ul>
-        </div>
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
 
-        <hr>
-        <div class="frame">
-            <h2>Try not to Die</h2>
-            <p><i>A mobile postapocalyptic survival game with crafting and combat. (Prototype at Koukoi Games)</i></p>
-            <img src="Images/try_not_horizontal.png" height="300" width="532" />
-            <ul>
-                <li>Technical Design</li>
-                <li>Programming</li>
-            </ul>
-        </div>
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>Undergrow</h3></div>
 
-        <hr>
-        <div class="frame">
-            <h2>Arrow Master</h2>
-            <p><i>Mobile PvP castle siege with dragons and catapults. (Prototype at Koukoi Games)</i></p>
-            <img src="Images/arrow_master_horizontal.png" height="300" width="532" />
-            <ul>
-                <li>Game Mechanics Programming</li>
-            </ul>
-        </div>
+                    I was at Oulu Game Lab in <span class="text-highlight">2020</span> autumn developing a mobile farming game where the player
+                    must draw the roots for flowers. My role was lead programmer. I also designed many of the game systems.
 
-        <hr>
-        <div class="frame">
-            <h2><a href="https://henuli.itch.io/froggoinspace">Froggo in Space</a></h2>
-            <p><i>Hyper casual platformer for WEBGL and mobile.</i></p>
-            <img src="Images/froggo_horizontal.png" height="200" width="500" />
-            <ul>
-                <li>Technical Lead</li>
-                <li>Programming</li>
-            </ul>
-        </div>-->
-            <!--<hr>
-        <div class="frame">
-            <h2>Outdoors Kainuu</h2>
-            <p><i>A client project for the 'Eino Leino' hiking route in Vuokatti.</i></p>
-            <video autoplay loop muted>
-                <source src="Images/outdoors.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <ul>
-                <li>Minigames Programming</li>
-                <li>Minigames Design</li>
-            </ul>
-        </div>-->
-            <!--<hr>
-        <div class="frame">
-            <h2><a href="https://raisedbyyou.itch.io/raised-by-you">Raised by You</a></h2>
-            <p><i>A Virtual Reality game about raising a monster pet.</i></p>
-            <img src="Images/raised_horizontal.png" height="200" width="500" />
-            <ul>
-                <li>AI Programming</li>
-                <li>Effects</li>
-            </ul>
-        </div>
+                </div>
 
-        <hr>
-        <div class="frame">
-            <h2><a href="https://twitter.com/catfish_team">Reef Chase</a></h2>
-            <p><i>A game of cat and mouse with evolving fish and sea creatures.</i></p>
-            <img src="Images/reef_horizontal.png" height="200" width="500" />
-            <ul>
-                <li>Fish AI Programming</li>
-                <li>UI and Effects Programming</li>
-            </ul>
-        </div>-->
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_undergrow.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
+                    <a href="https://play.google.com/store/apps/details?id=com.BalancedBeans.Undergrow" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/Logo_GPlay.png" style="position: absolute; right: 10px; width: 60px 100%; height: 60px;" alt="Icon">
+                    </a>
+                </div>
 
-
-            <br>
-
-        </div>
-
-        <div id="Timeline" data-tab-content>
-            <h1>Timeline</h1>
-
-            <div>
-                2007
-            </div>
-
-            <br>
-
-
-        </div>
-
-        <div id="Work" data-tab-content>
-            <h1>Work</h1>
-
-            <i>
-                Here's some links where you can take a closer look into my work.
-                Of course, I can't share work related code or other materials here, but feel free to browse some older projects.
-            </i>
-
-            <br>
-
-            <div class="frame">
-                <h2>Miscellaneous</h2>
-                <p><i>Platforms for my projects and other work.</i></p>
-                <ul>
-                    <li><a href="https://github.com/HenriHuh">GitHub - Code</a></li>
-                    <li><a href="https://www.artstation.com/henrih">Artstation - Game art</a></li>
-                </ul>
             </div>
 
         </div>
+
+        <!-- 6 -->
+        <div class="project-content">
+
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
+
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>Om Nom Run 2</h3></div>
+
+                    I started at Koukoi in <span class="text-highlight">2021</span> where we worked on a sequel to Om Nom Run before the company was acquired by Sciplay. OMR 2 was a game combining runner game and parkour elements.
+                    I contributed to <span class="text-highlight">gameplay and systems programming</span> as well as creating development tools like the <span class="text-highlight">level editor</span>.
+
+                </div>
+
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_onr2.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
+                    <a href="https://play.google.com/store/apps/details?id=com.zeptolab.omnomparkour.google&hl=fi&gl=US" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/Logo_GPlay.png" style="position: absolute; right: 10px; width: 60px 100%; height: 60px;" alt="Icon">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 7 -->
+        <div class="project-content">
+
+            <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px; padding-bottom: 10px; display: flex;">
+
+                <div style="width: 50%">
+                    <div class="title-center" style="text-align: left; font-size: 20px; color: #7de7ff;"><h3>SpellSpinner</h3></div>
+
+                    When Koukoi was acquired by SciPlay in <span class="text-highlight">2021</span> summer we started working on an ambitious game which combined Empires and Puzzles style gameplay with slot mechanics.
+                    My role in the 30 person team was to create a framework for developing heroes and enemies. I worked on a visual scripting tool which allowed easy implementation of new abilities for characters as well as a level design tool.
+                    In addition I implemented and managed  <span class="text-highlight">analytics, firebase plugins and automation</span> testing. The game was  <span class="text-highlight">soft-launched in 2022</span> and developed further until 2023.
+
+                </div>
+
+                <!--Images-->
+                <div style="height: 360px">
+                    <img src="Images/proj_spellspinner.png" style="border-radius: 3%; border: solid 2px #7de7ff; right: 10px; position: absolute;" height="356" />
+                    <a href="https://www.youtube.com/watch?v=8s8Z6FBWni4" target="_blank" rel="noopener noreferrer">
+                        <img src="Images/Logo_YT_Dark.png" style="position: absolute; background-color: white; border: solid white 3px; border-radius: 5px; right: 16px; top: 16px; width: 4px 100%; height: 32px;" alt="Icon">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Easter Eggs -->
+        <!-- https://raisedbyyou.itch.io/raised-by-you -->
+        <!-- https://twitter.com/catfish_team -->
+
+        <br>
 
     </div>
 
