@@ -142,10 +142,14 @@ const connectingLines = document.querySelectorAll('.connecting-line');
 
 for (var i = 0; i < timelineNodes.length; i++) {
     const index = i;
-    timelineNodes[index].addEventListener('click', () => moveTimeline(index))
+    timelineNodes[index].addEventListener('click', () => { moveTimeline(index); clearInterval(intervalId); })
 }
 
+var currentTimelineIndex = 0;
+
 function moveTimeline(index) {
+
+    currentTimelineIndex = index;
 
     for (var i = 0; i < timelineNodes.length; i++) {
         if (i <= index) {
@@ -186,12 +190,6 @@ moveTimeline(0);
 
 // Connecting line between items
 
-
-// Add event listeners for mouseover and mouseout
-element1.addEventListener('mouseover', () => showConnectingLine(element1, element2));
-element1.addEventListener('mouseout', hideConnectingLines);
-
-
 // Function to show the connecting line
 function showConnectingLine(fromElement, toElement, line) {
     const fromRect = fromElement.getBoundingClientRect();
@@ -219,3 +217,16 @@ function hideConnectingLines() {
         connectingLines[i].style.opacity = 0;
     }
 }
+
+// Intervals
+
+function moveToNextPoint() {
+    currentTimelineIndex++;
+    if (currentTimelineIndex >= timelineNodes.length) {
+        currentTimelineIndex = 0;
+    }
+    moveTimeline(currentTimelineIndex);
+    timelineNodes[0].style.backgroundColor = white;
+}
+
+var intervalId = setInterval(moveToNextPoint, 5000);
