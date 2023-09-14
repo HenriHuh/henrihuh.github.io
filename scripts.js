@@ -99,6 +99,7 @@ function setTimelinePointers(index, ...args) {
 }
 
 function showProficiencyLineX(fromElement, toElement, line) {
+
     const fromRect = fromElement.getBoundingClientRect();
     const toRect = toElement.getBoundingClientRect();
 
