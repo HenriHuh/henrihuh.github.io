@@ -120,7 +120,8 @@ body{
 .segment {
     margin-left: 10px;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    background-image: linear-gradient(rgba(255,255,255, 0.1), rgba(255,255,255, 0.02));
     border-radius: 8px;
     color: #eeeeee;
 }
@@ -228,7 +229,7 @@ body{
     width: 65%;
     border: solid #7de7ff 3px;
     position: absolute;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.12));
     font-family: 'Jost-Regular';
     border-radius: 6px;
 }
