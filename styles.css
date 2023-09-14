@@ -44,6 +44,18 @@ body{
     color: rgba(255, 255, 255, 0.9);
 }
 
+    /*.trigger-element::before {
+        content: "";
+        width: 20px;*/ /* Adjust the width and height for the circle */
+        /*height: 20px;*/
+        /*background-color: red;*/ /* Circle color */
+        /*background-image: linear-gradient(#ff4e00, #ff7d00);
+        border-radius: 50%;*/ /* Create a circle shape */
+        /*position: absolute;*/
+        /*top: 10px;*/ /* Adjust the top position */
+        /*right: 30px;*/ /* Adjust the right position */
+    /*}*/
+
 .non-trigger-element {
     padding: 10px;
     font-size: 16px;
@@ -75,6 +87,18 @@ body{
     transition: 0.3s ease;
 }
 
+    /*.timeline-node::before {
+        content: "";
+        width: 20px;*/ /* Adjust the width and height for the circle */
+        /*height: 20px;*/
+        /*background-color: red;*/ /* Circle color */
+        /*background-image: linear-gradient(#ff4e00, #ff7d00);
+        border-radius: 50%;*/ /* Create a circle shape */
+        /*position: absolute;*/
+        /*top: 10px;*/ /* Adjust the top position */
+        /*right: 30px;*/ /* Adjust the right position */
+    /*}*/
+
     .timeline-node.highlighted {
         border: 3px solid #7de7ff;
     }
@@ -96,7 +120,7 @@ body{
 .segment {
     margin-left: 10px;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     color: #eeeeee;
 }
@@ -116,8 +140,8 @@ body{
     .segment:nth-child(3) {
         margin-left: 30px;
         width: 25%;
-        height: 800px;
-        margin-bottom: -440px;
+        height: 860px;
+        margin-bottom: -510px;
         /*background-color: #c0c0c0;*/
     }
 

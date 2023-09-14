@@ -27,6 +27,9 @@ function highlightTarget(triggerElement, index) {
 
     triggerElement.style.color = 'white';
     triggerElement.style.backgroundColor = 'rgba(255, 255, 255, 0.35)';
+
+    // HERE STUFF
+
     currentInfoIndex = index;
 
     if (proficiencyTabs.length > index) {
