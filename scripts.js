@@ -26,3 +26,26 @@ if (isMobile()) {
         elem.addEventListener('mouseout', () => elem.style.color = 'rgba(255, 255, 255, 0.25)');
     });
 }
+
+
+const contents = document.querySelectorAll('.project-content');
+const tlineYears = document.querySelectorAll('.timeline-year');
+
+function changeOpacityOnScroll() {
+    const scrollDistance = window.scrollY + window.innerHeight / 3;
+
+    for (const cont of contents) {
+        const divTop = cont.offsetTop;
+        const opacity = 2.5 - Math.abs(scrollDistance - divTop) / 200;
+        cont.style.opacity = opacity;
+    }
+
+    for (const tl of tlineYears) {
+        const divTop = tl.offsetTop;
+        const opacity = 2.5 - Math.abs(scrollDistance - divTop) / 200;
+        tl.style.opacity = opacity;
+    }
+
+}
+
+window.addEventListener('scroll', changeOpacityOnScroll);

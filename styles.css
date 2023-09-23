@@ -17,7 +17,9 @@ body{
 .title-center {
     margin: auto;
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
+    font-size: large;
+    color: #7de7ff;
 }
 
 @font-face {
@@ -221,11 +223,11 @@ body{
     background-color: rgba(255, 255, 255, 0);
     font-size: 18px;
     color: #acacac;
-    transition: opacity 0.4s;
+    transition: opacity 0.3s;
     /*opacity: 0;*/
     /*width: 65%;*/
     border: solid #7de7ff 1px;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
     /*background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.12));*/
     font-family: 'Jost-Regular';
     /*border-radius: 6px;*/
@@ -258,16 +260,22 @@ body{
     padding: 20px;
     color: rgba(255, 255, 255, 0.25);
     transition: color 0.3s;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
 }
 
 .timeline-year {
     font-family: 'Jost-Regular';
-    font-size: 24px;
+    font-size: x-large;
     color: #7de7ff;
     text-align: center;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10));
     margin: 0 auto;
     max-width: 200px;
+    transition: opacity 0.3s;
     /*backdrop-filter: blur(12px);*/
+}
+
+.scroll-div {
+    /*transition: opacity 0.4s ease-in-out;*/
+    /*opacity: 0.2;*/
 }
