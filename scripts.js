@@ -39,7 +39,7 @@ function changeOpacityOnScroll() {
         const tlElem = tlineYears[i];
 
         const contentDivTop = contentElem.offsetTop;
-        const opacity = 3 - Math.abs(scrollDistance + contentElem.scrollHeight - contentDivTop) / 200;
+        const opacity = 3 - Math.abs(scrollDistance + 200 - contentDivTop) / 200;
 
         contentElem.style.opacity = opacity;
         tlElem.style.opacity = opacity;
