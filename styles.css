@@ -247,9 +247,10 @@ body{
     height: 100%;
 }
 
-@media (max-width: 960px) {
+@media (orientation: portrait), (max-width: 960px) {
     .grid-container {
         grid-template-columns: repeat(1, 400px);
+        /*transform: scale(1.5);*/
     }
 }
 
