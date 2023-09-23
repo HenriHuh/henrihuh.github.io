@@ -34,18 +34,17 @@ const tlineYears = document.querySelectorAll('.timeline-year');
 function changeOpacityOnScroll() {
     const scrollDistance = window.scrollY;
 
-    for (const cont of contents) {
-        const divTop = cont.offsetTop;
-        const opacity = 3 - Math.abs(scrollDistance + cont.clientHeight / 2 - divTop) / 200;
-        cont.style.opacity = opacity;
-    }
+    for (let i = 0; i < contents.length; i++) {
+        const contentElem = contents[i];
+        const tlElem = tlineYears[i];
 
-    for (const tl of tlineYears) {
-        const divTop = tl.offsetTop;
-        const opacity = 3 - Math.abs(scrollDistance + tl.clientHeight / 2 - divTop) / 200;
-        tl.style.opacity = opacity;
-    }
+        const contentDivTop = contentElem.offsetTop;
+        const opacity = 3 - Math.abs(scrollDistance + contentElem.scrollHeight - contentDivTop) / 200;
 
+        contentElem.style.opacity = opacity;
+        tlElem.style.opacity = opacity;
+    }
 }
 
 window.addEventListener('scroll', changeOpacityOnScroll);
+changeOpacityOnScroll();
