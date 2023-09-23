@@ -46,5 +46,7 @@ function changeOpacityOnScroll() {
     }
 }
 
-window.addEventListener('scroll', changeOpacityOnScroll);
-changeOpacityOnScroll();
+if (!isMobile()) {
+    window.addEventListener('scroll', changeOpacityOnScroll);
+    changeOpacityOnScroll();
+}
