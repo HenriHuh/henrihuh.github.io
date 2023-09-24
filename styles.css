@@ -303,11 +303,13 @@ body{
     .content-text {
         width: 80%;
         margin: 0 auto;
-        color:white;
+        color: white;
     }
 
     .scroll-div {
         flex-direction: column;
+        max-width: 474px;
+        margin: 0 auto;
     }
 
 }
