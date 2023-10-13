@@ -16,12 +16,12 @@ function isMobile() {
 
 const gridElements = document.querySelectorAll('.grid-item');
 
+
 if (isMobile()) {
     gridElements.forEach((elem) => {
         elem.style.color = 'white';
-        if (window.location != "nojs.html") {
+        if (window.location.href.endsWith("index.html")) {
             window.location.href = "nojs.html";
-
         }
     });
 } else {
