@@ -18,11 +18,12 @@ const gridElements = document.querySelectorAll('.grid-item');
 
 
 if (isMobile()) {
+    if (window.location.href.endsWith("index.html")) {
+        window.location.href = "nojs.html";
+    }
+
     gridElements.forEach((elem) => {
         elem.style.color = 'white';
-        if (window.location.href.endsWith("index.html")) {
-            window.location.href = "nojs.html";
-        }
     });
 } else {
     gridElements.forEach((elem) => {
