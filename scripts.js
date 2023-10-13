@@ -19,6 +19,7 @@ const gridElements = document.querySelectorAll('.grid-item');
 if (isMobile()) {
     gridElements.forEach((elem) => {
         elem.style.color = 'white';
+        window.location.href = "nojs.html";
     });
 } else {
     gridElements.forEach((elem) => {
