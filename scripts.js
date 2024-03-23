@@ -27,6 +27,7 @@ if (isMobile()) {
     });
 } else {
     gridElements.forEach((elem) => {
+        elem.style.color = 'rgba(255, 255, 255, 0.25)';
         elem.addEventListener('mouseover', () => elem.style.color = 'white');
         elem.addEventListener('mouseout', () => elem.style.color = 'rgba(255, 255, 255, 0.25)');
     });
