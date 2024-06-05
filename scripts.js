@@ -27,9 +27,9 @@ if (isMobile()) {
     });
 } else {
     gridElements.forEach((elem) => {
-        elem.style.color = 'rgba(255, 255, 255, 0.25)';
+        elem.style.color = 'rgba(255, 255, 255, 0.75)';
         elem.addEventListener('mouseover', () => elem.style.color = 'white');
-        elem.addEventListener('mouseout', () => elem.style.color = 'rgba(255, 255, 255, 0.25)');
+        elem.addEventListener('mouseout', () => elem.style.color = 'rgba(255, 255, 255, 0.75)');
     });
 }
 
@@ -45,7 +45,7 @@ function changeOpacityOnScroll() {
         const tlElem = tlineYears[i];
 
         const contentDivTop = contentElem.offsetTop;
-        const opacity = 3 - Math.abs(scrollDistance + 200 - contentDivTop) / 200;
+        const opacity = 4 - Math.abs(scrollDistance + 200 - contentDivTop) / 200;
 
         contentElem.style.opacity = opacity;
         tlElem.style.opacity = opacity;
